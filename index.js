@@ -10,7 +10,7 @@ const length = document.getElementById('length')
 const volume = document.getElementById('volume')
 const mass = document.getElementById('mass')
 
-let resultsContainer = document.getElementById('res-cntr')
+
 
 convertBtn.addEventListener('click', function () {
     renderUnits()
@@ -31,7 +31,7 @@ function renderUnits() {
     let volumeF = userInput / 0.264
     volume.innerHTML = `
         <h3>Volume (Liters/Gallons</h3>
-        <p>${userInput} liters = ${volumeM.toFixed(3)} gallons | ${userInput} gallons = $       {volumeF.toFixed(3)} liters</p>
+        <p>${userInput} liters = ${volumeM.toFixed(3)} gallons | ${userInput} gallons = ${volumeF.toFixed(3)} liters</p>
     `
 
     let massM = userInput * 2.204
